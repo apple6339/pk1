@@ -24,11 +24,7 @@
       },
       {
         "pagePath": "pages/pk/index",
-        "text": "PK"
-      },
-      {
-        "pagePath": "pages/checkin/index",
-        "text": "Check-in"
+        "text": "Stats"
       },
       {
         "pagePath": "pages/profile/index",

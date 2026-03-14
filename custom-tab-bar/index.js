@@ -3,8 +3,7 @@ Component({
     selected: 0,
     list: [
       { pagePath: '/pages/home/index', text: 'Home', icon: '⌂' },
-      { pagePath: '/pages/pk/index', text: 'Stats', icon: '▤' },
-      { pagePath: '/pages/checkin/index', text: 'Check', icon: '＋' },
+      { pagePath: '/pages/pk/index', text: 'Stats', icon: '▥' },
       { pagePath: '/pages/profile/index', text: 'Profile', icon: '◉' }
     ]
   },

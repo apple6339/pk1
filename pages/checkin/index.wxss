@@ -92,6 +92,12 @@
   overflow: hidden;
 }
 
+.proof-tip {
+  margin-bottom: 16rpx;
+  color: #9ca3af;
+  font-size: 22rpx;
+}
+
 .proof-image::after {
   content: '';
   position: absolute;

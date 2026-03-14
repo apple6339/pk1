@@ -1,10 +1,21 @@
 <view class="screen">
   <view class="status-bar"></view>
   <view class="topbar">
-    <text>◉ WeChat</text>
-    <text>100%</text>
+    <view class="status-group">
+      <text>◖◗</text>
+      <text>WeChat</text>
+    </view>
+    <view class="status-group">
+      <text>100%</text>
+    </view>
   </view>
-  <view class="page-title">每日打卡</view>
+  <view class="nav-bar">
+    <view class="page-title">每日打卡</view>
+    <view class="nav-actions">
+      <text class="nav-more">···</text>
+      <text class="nav-circle">○</text>
+    </view>
+  </view>
 
   <view class="date-row">
     <view class="arrow">‹</view>
@@ -30,6 +41,7 @@
 
   <view class="section-title">打卡凭证</view>
   <view class="card proof-card">
+    <view class="proof-tip">上传体重秤照片</view>
     <view class="proof-image">
       <view class="proof-date">{{photoDate}}</view>
     </view>

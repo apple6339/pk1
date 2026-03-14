@@ -1,11 +1,11 @@
 .screen {
   min-height: 100vh;
-  padding: 32rpx 24rpx 176rpx;
+  padding: 24rpx 24rpx 164rpx;
   background: linear-gradient(180deg, #2ac769 0%, #5fd37b 180rpx, #f4f7fb 180rpx, #f4f7fb 100%);
 }
 
 .status-bar {
-  height: 44rpx;
+  height: 20rpx;
 }
 
 .topbar {
@@ -13,15 +13,61 @@
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  font-size: 24rpx;
-  margin-bottom: 20rpx;
+  font-size: 18rpx;
+  margin-bottom: 14rpx;
+  opacity: 0.95;
+}
+
+.status-group {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54rpx;
+  margin-bottom: 24rpx;
 }
 
 .page-title {
   color: #ffffff;
-  font-size: 36rpx;
+  font-size: 30rpx;
   font-weight: 600;
-  margin-bottom: 24rpx;
+  line-height: 1.2;
+}
+
+.nav-actions {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  padding: 8rpx 12rpx;
+  min-width: 104rpx;
+  height: 48rpx;
+  border-radius: 24rpx;
+  border: 2rpx solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-more,
+.nav-circle {
+  color: #ffffff;
+  font-size: 20rpx;
+  line-height: 1;
+}
+
+.nav-more {
+  letter-spacing: 2rpx;
+}
+
+.nav-circle {
+  margin-left: auto;
 }
 
 .card {
