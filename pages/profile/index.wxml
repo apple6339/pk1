@@ -25,7 +25,7 @@
           <view class="report-meta">目标体重: {{target}}</view>
         </view>
         <view class="report-column right-column">
-          <view class="report-label">目标排量: {{target}}</view>
+          <view class="report-label">当前阶段: {{stage}}</view>
           <view class="report-meta">更新体重: --</view>
           <view class="report-meta">更新时间: {{updatedAt}}</view>
         </view>

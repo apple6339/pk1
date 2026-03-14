@@ -2,7 +2,7 @@ module.exports = {
   home: {
     currentWeight: '75.2',
     reduced: '4.8',
-    quote: '“夜跑塑形的这力量，你要慢慢发力，我的腿都酸的人。”',
+    quote: '“夜跑塑形要循序渐进，我的腿都酸了。”',
     duel: {
       title: '好友 1v1 挑战',
       leftName: '夏季瘦身战',
@@ -36,7 +36,7 @@ module.exports = {
     date: '2023年6月13日',
     weight: 75.2,
     meal: '饮食、酸奶等',
-    sport: '运动人运动(可选)',
+    sport: '慢跑 30 分钟 (可选)',
     photoDate: '2025-01-18'
   },
   profile: {
@@ -44,8 +44,9 @@ module.exports = {
     bmi: '24.3',
     target: '70 kg',
     updatedAt: '2025-06',
+    stage: '稳定减脂期',
     records: ['80', '78', '76', '74', '73', '72', '72', '71'],
-    months: ['10月', '3月', '3月', '3月', '1月', '1月', '6月'],
+    months: ['10月', '11月', '12月', '1月', '2月', '3月', '4月', '5月'],
     badges: [
       { title: '7天坚持打卡', tone: 'blue' },
       { title: '减重控星', tone: 'gold' },
