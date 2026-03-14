@@ -1,0 +1,63 @@
+<view class="screen">
+  <view class="status-bar"></view>
+  <view class="topbar">
+    <view class="status-group">
+      <text>◖◗</text>
+      <text>WeChat</text>
+    </view>
+    <view class="status-group">
+      <text>100%</text>
+    </view>
+  </view>
+  <view class="nav-bar">
+    <view class="page-title">每日打卡</view>
+    <view class="nav-actions">
+      <text class="nav-more">···</text>
+      <text class="nav-circle">○</text>
+    </view>
+  </view>
+
+  <view class="date-row">
+    <view class="arrow">‹</view>
+    <text class="date-text">{{date}}</text>
+    <view class="arrow">›</view>
+  </view>
+
+  <view class="card weight-card">
+    <view class="weight-row">
+      <view class="circle-btn" bindtap="decreaseWeight">－</view>
+      <view class="weight-value">{{weight}} <text class="unit">kg</text></view>
+      <view class="circle-btn plus" bindtap="increaseWeight">＋</view>
+    </view>
+    <view class="ruler">
+      <view wx:for="{{ticks}}" wx:key="*this" class="tick {{item === 5 ? 'active' : ''}}"></view>
+    </view>
+    <view class="scale-row">
+      <text>-10</text>
+      <text>0</text>
+      <text>10</text>
+    </view>
+  </view>
+
+  <view class="section-title">打卡凭证</view>
+  <view class="card proof-card">
+    <view class="proof-tip">上传体重秤照片</view>
+    <view class="proof-image">
+      <view class="proof-date">{{photoDate}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">添加详情 (可选)</view>
+  <view class="card form-card">
+    <view class="field">
+      <text class="label">饮食</text>
+      <text class="placeholder">{{meal}}</text>
+    </view>
+    <view class="field">
+      <text class="label">运动</text>
+      <text class="placeholder">{{sport}}</text>
+    </view>
+  </view>
+
+  <button class="pill-button submit" bindtap="submitCheckIn">确认打卡</button>
+</view>

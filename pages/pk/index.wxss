@@ -1,0 +1,163 @@
+@import "../../styles/common.wxss";
+
+.hero-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx 28rpx;
+  color: #ffffff;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.hero-label {
+  font-size: 24rpx;
+  opacity: 0.9;
+}
+
+.hero-time {
+  font-size: 56rpx;
+  font-weight: 700;
+}
+
+.runner {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 24rpx;
+  background: rgba(255, 255, 255, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64rpx;
+}
+
+.rank-card {
+  padding: 26rpx 26rpx 32rpx;
+  margin-bottom: 20rpx;
+}
+
+.rank-head {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  margin-bottom: 20rpx;
+}
+
+.rank-title {
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.rank-line {
+  flex: 1;
+  height: 4rpx;
+  border-radius: 999rpx;
+  background: linear-gradient(90deg, #22c55e, #e5e7eb);
+}
+
+.battle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contender {
+  position: relative;
+  width: 220rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rpx;
+}
+
+.medal {
+  position: absolute;
+  top: -12rpx;
+  left: 24rpx;
+  min-width: 40rpx;
+  height: 40rpx;
+  padding: 0 10rpx;
+  border-radius: 20rpx;
+  line-height: 40rpx;
+  color: #ffffff;
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.medal.gray,
+.order.gray {
+  background: #94a3b8;
+}
+
+.medal.orange,
+.order.orange {
+  background: #f59e0b;
+}
+
+.order {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #ffffff;
+  font-size: 22rpx;
+  margin-right: 20rpx;
+}
+
+.contender-name {
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.contender-meta,
+.item-meta {
+  font-size: 22rpx;
+  color: #9ca3af;
+}
+
+.vs {
+  font-size: 64rpx;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.list-card {
+  padding: 12rpx 24rpx;
+}
+
+.rank-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22rpx 0;
+  border-bottom: 1rpx solid #eef2f7;
+}
+
+.rank-item:last-child {
+  border-bottom: none;
+}
+
+.left {
+  gap: 0;
+}
+
+.item-name {
+  font-size: 28rpx;
+  color: #111827;
+}
+
+.item-value {
+  font-size: 28rpx;
+  color: #374151;
+}
+
+.submit {
+  margin-top: 28rpx;
+  background: linear-gradient(135deg, #34d399, #22c55e);
+  color: #ffffff;
+}

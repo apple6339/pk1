@@ -1,0 +1,56 @@
+<view class="screen">
+  <view class="status-bar"></view>
+  <view class="topbar">
+    <view class="status-group">
+      <text>◖◗</text>
+      <text>WeChat</text>
+    </view>
+    <view class="status-group">
+      <text>100%</text>
+    </view>
+  </view>
+  <view class="nav-bar">
+    <view class="page-title">减重 PK</view>
+    <view class="nav-actions">
+      <text class="nav-more">···</text>
+      <text class="nav-circle">○</text>
+    </view>
+  </view>
+
+  <view class="card hero-card">
+    <view class="row space-between">
+      <view>
+        <view class="metric-line">当前体重: <text class="metric-value">{{currentWeight}}</text> kg</view>
+        <view class="metric-line sub">已减: <text class="metric-sub">{{reduced}}</text> kg</view>
+      </view>
+      <view class="runner">🏃</view>
+    </view>
+    <view class="quote">{{quote}}</view>
+  </view>
+
+  <view class="section-title">我的 PK</view>
+  <view class="card duel-card">
+    <view class="duel-title">{{duel.title}}</view>
+    <view class="duel-stage">
+      <view class="player-block">
+        <view class="avatar">我</view>
+        <text class="player-name">{{duel.leftName}}</text>
+      </view>
+      <text class="vs">VS</text>
+      <view class="player-block">
+        <view class="avatar blue">明</view>
+        <text class="player-name">{{duel.rightName}}</text>
+      </view>
+    </view>
+    <view class="progress-track">
+      <view class="progress-left"></view>
+      <view class="progress-right"></view>
+    </view>
+    <view class="countdown">{{duel.remaining}}</view>
+  </view>
+
+  <view class="action-row">
+    <button class="pill-button light" bindtap="createPk">创建新 PK</button>
+    <button class="pill-button primary" bindtap="joinPk">加入 PK</button>
+  </view>
+</view>
