@@ -40,7 +40,7 @@
         </view>
         <view class="report-column right-column">
           <view class="report-label">当前阶段: {{stage}}</view>
-          <view class="report-meta">更新体重: --</view>
+          <view class="report-meta">更新体重: {{latestWeight}}</view>
           <view class="report-meta">更新时间: {{updatedAt}}</view>
         </view>
       </view>

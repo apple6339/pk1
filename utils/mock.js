@@ -43,6 +43,7 @@ module.exports = {
     name: '我美啦',
     bmi: '24.3',
     target: '70 kg',
+    latestWeight: '71 kg',
     updatedAt: '2025-06',
     stage: '稳定减脂期',
     records: ['80', '78', '76', '74', '73', '72', '72', '71'],
