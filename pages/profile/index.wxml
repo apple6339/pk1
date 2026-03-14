@@ -1,0 +1,68 @@
+<view class="screen">
+  <view class="status-bar"></view>
+  <view class="topbar">
+    <text>◉ WeChat</text>
+    <text>100%</text>
+  </view>
+  <view class="page-title">个人中心</view>
+
+  <view class="card profile-card">
+    <view class="profile-banner">
+      <view class="avatar large">我</view>
+      <view class="profile-copy">
+        <view class="profile-name">{{name}}</view>
+        <view class="badge">健康减重进行中</view>
+      </view>
+      <view class="coach">👨‍⚕️</view>
+    </view>
+
+    <view class="report-card">
+      <view class="report-title">健康报告</view>
+      <view class="report-grid">
+        <view class="report-column left-column">
+          <view class="report-label">体重变化趋势</view>
+          <view class="report-meta">当前 BMI: {{bmi}}</view>
+          <view class="report-meta">目标体重: {{target}}</view>
+        </view>
+        <view class="report-column right-column">
+          <view class="report-label">目标排量: {{target}}</view>
+          <view class="report-meta">更新体重: --</view>
+          <view class="report-meta">更新时间: {{updatedAt}}</view>
+        </view>
+      </view>
+      <view class="chart-box">
+        <view class="chart-axis left">80</view>
+        <view class="chart-axis middle">70</view>
+        <view class="chart-axis bottom">60</view>
+        <view class="chart-area">
+          <view class="grid grid-top"></view>
+          <view class="grid grid-mid"></view>
+          <view class="grid grid-bottom"></view>
+          <view
+            wx:for="{{chartSegments}}"
+            wx:key="index"
+            class="segment"
+            style="left: {{item.left}}; top: {{item.top}}; width: {{item.width}}; transform: rotate({{item.rotate}});"
+          ></view>
+          <view
+            wx:for="{{chartDots}}"
+            wx:key="index"
+            class="dot"
+            style="left: {{item.left}}; top: {{item.top}};"
+          ></view>
+        </view>
+        <view class="month-row">
+          <text wx:for="{{months}}" wx:key="index">{{item}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="honor-title">荣誉墙</view>
+    <view class="badge-row">
+      <view wx:for="{{badges}}" wx:key="title" class="honor {{item.tone}}">
+        <view class="honor-icon">🏆</view>
+        <view class="honor-text">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>

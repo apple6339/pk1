@@ -1,0 +1,54 @@
+<view class="screen">
+  <view class="status-bar"></view>
+  <view class="topbar">
+    <text>◉ WeChat</text>
+    <text>100%</text>
+  </view>
+  <view class="page-title">{{title}}</view>
+
+  <view class="hero-panel">
+    <view class="hero-copy">
+      <text class="hero-label">剩余时间</text>
+      <text class="hero-time">{{remaining}}</text>
+    </view>
+    <view class="runner">🏃</view>
+  </view>
+
+  <view class="card rank-card">
+    <view class="rank-head">
+      <text class="rank-title">排名</text>
+      <view class="rank-line"></view>
+    </view>
+    <view class="battle-row">
+      <view class="contender">
+        <view class="medal gray">{{rank}}</view>
+        <view class="avatar">我</view>
+        <text class="contender-name">{{me.name}}</text>
+        <text class="contender-meta">{{me.label}}</text>
+      </view>
+      <text class="vs">VS</text>
+      <view class="contender">
+        <view class="medal orange">1</view>
+        <view class="avatar blue">明</view>
+        <text class="contender-name">{{rival.name}}</text>
+        <text class="contender-meta">{{rival.label}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="card list-card">
+    <view wx:for="{{ranking}}" wx:key="rank" class="rank-item">
+      <view class="row left">
+        <view class="order {{item.accent}}">{{item.rank}}</view>
+        <view class="avatar {{item.rank === 1 ? '' : 'blue'}}">{{item.rank === 1 ? '我' : '明'}}</view>
+        <view>
+          <view class="item-name">{{item.name}}</view>
+          <view class="item-meta">{{item.label}}</view>
+        </view>
+      </view>
+      <text class="item-value">{{item.value}} kg</text>
+    </view>
+  </view>
+
+  <button class="pill-button submit" bindtap="goCheckIn">每日打卡</button>
+</view>

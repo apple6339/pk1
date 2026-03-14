@@ -1,0 +1,127 @@
+@import "../../styles/common.wxss";
+
+.hero-card {
+  padding: 32rpx;
+}
+
+.metric-line {
+  font-size: 28rpx;
+  color: #374151;
+  margin-bottom: 12rpx;
+}
+
+.metric-line.sub {
+  margin-bottom: 24rpx;
+}
+
+.metric-value {
+  font-size: 44rpx;
+  font-weight: 700;
+  color: #111827;
+}
+
+.metric-sub {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.runner {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 24rpx;
+  background: linear-gradient(135deg, #e9fcec, #d1fae5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64rpx;
+}
+
+.quote {
+  padding: 20rpx 24rpx;
+  border-radius: 24rpx;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 24rpx;
+  line-height: 1.6;
+}
+
+.duel-card {
+  padding: 32rpx;
+}
+
+.duel-title {
+  text-align: center;
+  font-size: 26rpx;
+  color: #16a34a;
+  margin-bottom: 20rpx;
+}
+
+.duel-stage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12rpx;
+}
+
+.player-name {
+  font-size: 24rpx;
+  color: #374151;
+}
+
+.vs {
+  font-size: 60rpx;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.progress-track {
+  display: flex;
+  height: 12rpx;
+  border-radius: 999rpx;
+  overflow: hidden;
+  margin: 28rpx 0 20rpx;
+  background: #e5e7eb;
+}
+
+.progress-left {
+  width: 58%;
+  background: #22c55e;
+}
+
+.progress-right {
+  flex: 1;
+  background: #fb923c;
+}
+
+.countdown {
+  text-align: center;
+  font-size: 22rpx;
+  color: #6b7280;
+}
+
+.action-row {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 32rpx;
+}
+
+.action-row button {
+  flex: 1;
+}
+
+.light {
+  background: #e8f8ee;
+  color: #16a34a;
+}
+
+.primary {
+  background: linear-gradient(135deg, #34d399, #22c55e);
+  color: #ffffff;
+}

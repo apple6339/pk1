@@ -1,0 +1,196 @@
+@import "../../styles/common.wxss";
+
+.profile-card {
+  padding: 0 0 28rpx;
+  overflow: hidden;
+}
+
+.profile-banner {
+  display: flex;
+  align-items: center;
+  padding: 28rpx;
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  color: #ffffff;
+}
+
+.profile-copy {
+  margin-left: 20rpx;
+}
+
+.avatar.large {
+  width: 84rpx;
+  height: 84rpx;
+  font-size: 34rpx;
+}
+
+.profile-name {
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+}
+
+.coach {
+  margin-left: auto;
+  font-size: 64rpx;
+}
+
+.report-card {
+  margin: 24rpx;
+  padding: 28rpx;
+  border-radius: 28rpx;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1rpx #eef2f7;
+}
+
+.report-title,
+.honor-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+
+.report-grid {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.report-column {
+  width: 50%;
+}
+
+.left-column {
+  padding-right: 10rpx;
+}
+
+.right-column {
+  padding-left: 10rpx;
+}
+
+.report-label {
+  font-size: 24rpx;
+  color: #374151;
+  margin-bottom: 10rpx;
+}
+
+.report-meta {
+  font-size: 22rpx;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.chart-box {
+  position: relative;
+  padding: 12rpx 0 0 40rpx;
+}
+
+.chart-axis {
+  position: absolute;
+  left: 0;
+  font-size: 20rpx;
+  color: #9ca3af;
+}
+
+.chart-axis.left {
+  top: 14rpx;
+}
+
+.chart-axis.middle {
+  top: 68rpx;
+}
+
+.chart-axis.bottom {
+  top: 126rpx;
+}
+
+.chart-area {
+  position: relative;
+  height: 160rpx;
+}
+
+.grid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1rpx;
+  background: #e5e7eb;
+}
+
+.grid-top {
+  top: 18rpx;
+}
+
+.grid-mid {
+  top: 78rpx;
+}
+
+.grid-bottom {
+  top: 138rpx;
+}
+
+.segment {
+  position: absolute;
+  height: 4rpx;
+  border-radius: 999rpx;
+  background: #10b981;
+  transform-origin: left center;
+}
+
+.dot {
+  position: absolute;
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 6rpx rgba(16, 185, 129, 0.12);
+}
+
+.month-row {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10rpx;
+  font-size: 20rpx;
+  color: #9ca3af;
+}
+
+.honor-title {
+  margin: 0 24rpx 20rpx;
+}
+
+.badge-row {
+  display: flex;
+  padding: 0 24rpx;
+}
+
+.honor {
+  flex: 1;
+  border-radius: 24rpx;
+  padding: 20rpx 10rpx;
+  text-align: center;
+  color: #ffffff;
+}
+
+.honor + .honor {
+  margin-left: 16rpx;
+}
+
+.honor.blue {
+  background: linear-gradient(135deg, #94a3b8, #64748b);
+}
+
+.honor.gold {
+  background: linear-gradient(135deg, #fcd34d, #f59e0b);
+}
+
+.honor.brown {
+  background: linear-gradient(135deg, #d6a46d, #b7791f);
+}
+
+.honor-icon {
+  font-size: 40rpx;
+  margin-bottom: 12rpx;
+}
+
+.honor-text {
+  font-size: 22rpx;
+  line-height: 1.4;
+}
